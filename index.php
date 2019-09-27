@@ -4,4 +4,6 @@
 	echo '<br>';
 	echo '<a href="block2\lessons2\lessons2.php">block2_lessons2</a>';
 	echo '<br>';
+	echo '<a href="block2\lessons3\lessons3.php">block2_lessons3</a>';
+	echo '<br>';
 ?>
