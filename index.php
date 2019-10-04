@@ -14,4 +14,10 @@
 	echo '<br>';
 	echo '<a href="block2\lessons7\lessons7.php">block2_lessons7</a>';
 	echo '<br>';
+	echo '<a href="block2\lessons8\lessons8.php">block2_lessons8</a>';
+	echo '<br>';
+	echo '<a href="block2\lessons9\lessons9.php">block2_lessons9</a>';
+	echo '<br>';
+	echo '<a href="block2\lessons10\lessons10.php">block2_lessons10</a>';
+	echo '<br>';
 ?>
