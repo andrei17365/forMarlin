@@ -14,6 +14,8 @@
 	echo '<br>';
 	echo '<a href="lessons4.7/index.php">block3_lessons4_task7</a>';
 	echo '<br>';
+	echo '<a href="lessons4.9/index.php">block3_lessons4_task9</a>';
+	echo '<br>';
 
 
 ?>
