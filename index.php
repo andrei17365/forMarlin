@@ -28,4 +28,20 @@
 	echo '<br>';
 	echo '<a href="block3\lessons4.php">block3_lessons4</a>';
 	echo '<br>';
+	echo '<a href="block3\lessons5\lessons5.1.php">block3_lessons5.1</a>';
+	echo '<br>';
+	echo '<a href="block3\lessons5\lessons5.3.php">block3_lessons5.3</a>';
+	echo '<br>';
+	echo '<a href="block3\lessons5\lessons5.4.php">block3_lessons5.4</a>';
+	echo '<br>';
+	echo '<a href="block3\lessons5\lessons5.5.php">block3_lessons5.5</a>';
+	echo '<br>';
+	echo '<a href="block3\lessons5\lessons5.6.php">block3_lessons5.6</a>';
+	echo '<br>';
+	echo '<a href="block3\lessons5\lessons5.7\lessons5.7.php">block3_lessons5.7</a>';
+	echo '<br>';
+	echo '<a href="block4\lessons1.php">block4_lessons1</a>';
+	echo '<br>';
+	echo '<a href="block4\lessons2.php">block4_lessons2</a>';
+	echo '<br>';
 ?>
