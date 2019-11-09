@@ -18,46 +18,26 @@
         $result = mysqli_query($link, $query) or die(mysqli_error($link));
 		for ($data = []; $row = mysqli_fetch_array($result); $data[] = $row);
 
-			echo $_POST;
+		$name = $data[0]['name'];
+		$age = $data[0]['age'];
+		$salary = $data[0]['salary'];
+
 
     	if (isset($_POST['name']) && isset($_POST['age']) && isset($_POST['salary'])) {
-    		if ($_POST[name]!=='Имя' && $_POST[age]!=='Возраст' && $_POST[salary]!=='Зарплата') {
-    			$query = "UPDATE workers SET name='$_POST[name]', age=$_POST[age], salary=$_POST[salary] WHERE id=$_GET[get]";
-    			mysqli_query($link, $query) or die(mysqli_error($link));
-    		}
-    		if ($_POST[name]!=='Имя' && $_POST[age]!=='Возраст') {
-    			$query = "UPDATE workers SET name='$_POST[name]', age=$_POST[age] WHERE id=$_GET[get]";
-    			mysqli_query($link, $query) or die(mysqli_error($link));
-    		}
-    		if ($_POST[name]!=='Имя' && $_POST[salary]!=='Зарплата') {
-    			$query = "UPDATE workers SET name='$_POST[name]', salary=$_POST[salary] WHERE id=$_GET[get]";
-    			mysqli_query($link, $query) or die(mysqli_error($link));
-    		}
-    		if ($_POST[age]!=='Возраст' && $_POST[salary]!=='Зарплата') {
-    			$query = "UPDATE workers SET age=$_POST[age], salary=$_POST[salary] WHERE id=$_GET[get]";
-    			mysqli_query($link, $query) or die(mysqli_error($link));
-    		}
-    		if ($_POST[name]!=='Имя') {
-    			$query = "UPDATE workers SET name='$_POST[name]' WHERE id=$_GET[get]";
-    			mysqli_query($link, $query) or die(mysqli_error($link));
-    		}
-    		if ($_POST[age]!=='Возраст') {
-    			$query = "UPDATE workers SET age=$_POST[age] WHERE id=$_GET[get]";
-    			mysqli_query($link, $query) or die(mysqli_error($link));
-    		}
-    		if ($_POST[salary]!=='Зарплата') {
-    			$query = "UPDATE workers SET salary=$_POST[salary] WHERE id=$_GET[get]";
-    			mysqli_query($link, $query) or die(mysqli_error($link));
-    		}
+
+    		$query = "UPDATE workers SET name='$_POST[name]', age=$_POST[age], salary=$_POST[salary] WHERE id=$_GET[get]";
+    		mysqli_query($link, $query) or die(mysqli_error($link));
     	}
 
 ?>
 
 <form action='' method="POST">
-	<input type="text" name="name" value="Имя">
-	<input type="text" name="age" value="Возраст">
-	<input type="text" name="salary" value="Зарплата">
-	<input type="submit" value="Редактировать">
+<?php
+	echo "<input type=\"text\" name=\"name\" value=\"$name\">";
+	echo "<input type=\"text\" name=\"age\" value=\"$age\">";
+	echo "<input type=\"text\" name=\"salary\" value=\"$salary\">";
+?>
+<input type="submit" value="Редактировать">
 </form>
 
 <a href="lessons4.php">назад</a>
